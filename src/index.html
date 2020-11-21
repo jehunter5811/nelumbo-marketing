@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nelumbo</title>
+    <meta
+      name="description"
+      content="Nelumbo makes Filecoin storage client development easy"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      property="og:title"
+      content="Nelumbo - A One-Click Filecoin Blockchain on Your Computer"
+    />
+    <meta property="og:type" content="site" />
+    <meta property="og:url" content="https://nelumbo.dev" />
+    <meta property="og:image" content="assets/img/twitter_profile_image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="apple-touch-icon" href="./img/logo.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="./style.min.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <p id='message-container' style='display: none'></p>
+    <div class='container'>
+      <img id="main-logo" src='./img/logo_transparent.png' alt='Nelumbo logo' />
+      <h1>Nelumbo is a one-click Filecoin blockchain</h1>
+      <h2>Develop Filecoin storage clients the easy way</h2>
+      <p>It's coming soon. Get notified of updates.</p>
+      <form id='form' onsubmit='(e) => e.preventDefault(); getOnTheList()'>
+        <div class='form-group'>
+          <div class='form-label'>
+            <label for='email'>Email</label>
+          </div>
+          <div class='form-input'>
+            <input name='email' id='email' aria-label="email" class='input' type='email' placeholder="fil@filecoin-dev.com" />
+          </div>            
+          <button id='submit-btn' type='submit'>Get on the list</button>          
+        </div>
+      </form>
+    </div>     
+    <script>
+      document.getElementById('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+      })
+    </script>   
+    <script src='./main.min.js'></script>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
+    /></noscript>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Goldman';
+  src: url('../fonts/Goldman-Regular.ttf');
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: 'Goldman', sans-serif;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-logo {
+  width: 30%;
+  margin: auto;
+}
+
+.input {
+  padding: 5px;
+}
+
+.form-group {
+  margin-top: 25px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#submit-btn {
+  margin-top: 25px;
+  font-size: 16px;
+  padding: 10px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#message-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 0;
+}
