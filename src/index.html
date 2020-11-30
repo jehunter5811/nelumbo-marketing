@@ -28,6 +28,10 @@
     <link rel="apple-touch-icon" href="./img/logo.png" />
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css"
+    />
     <link rel="stylesheet" href="./style.min.css" />
 
     <meta name="theme-color" content="#fafafa" />
@@ -40,7 +44,62 @@
       <h1>Nelumbo is a one-click Filecoin blockchain</h1>
       <h2>Develop Filecoin storage clients the easy way</h2>
       <p>It's coming soon. Get notified of updates.</p>
-      <form id="form" onsubmit="(e) => e.preventDefault(); getOnTheList()">
+
+      <div
+        class="emailoctopus-form-wrapper emailoctopus-form-centered emailoctopus-form-wrapper-medium"
+        style="
+          font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+          color: rgb(255, 255, 255);
+        "
+      >
+        <p class="emailoctopus-success-message"></p>
+        <p class="emailoctopus-error-message"></p>
+        <form
+          action="https://emailoctopus.com/lists/f7da3c7e-331d-11eb-a3d0-06b4694bee2a/members/embedded/1.3/add"
+          method="post"
+          data-message-success="You're on the list!"
+          data-message-missing-email-address="Your email address is required."
+          data-message-invalid-email-address="Your email address looks incorrect, please try again."
+          data-message-bot-submission-error="This doesn't look like a human submission."
+          data-message-consent-required="Please check the checkbox to indicate your consent."
+          data-message-invalid-parameters-error="This form has missing or invalid fields."
+          data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
+          class="emailoctopus-form"
+        >
+          <div class="emailoctopus-form-row form-label">
+            <label style='font-family: "Goldman", sans-serif;' for="field_0"> Email address </label>
+            <input
+              class='input'
+              id="field_0"
+              name="field_0"
+              type="email"
+              placeholder
+              required="required"
+            />
+          </div>
+          <div aria-hidden="true" class="emailoctopus-form-row-hp">
+            <input
+              class='input'
+              type="text"
+              name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a"
+              tabindex="-1"
+              autocomplete="nope"
+            />
+          </div>
+          <div class="emailoctopus-form-row-subscribe">
+            <input class='input' type="hidden" name="successRedirectUrl" />
+            <button
+              type="submit"
+              id="submit-btn", 
+              style='font-family: "Goldman", sans-serif;'
+            >
+              Get on the list
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- <form id="form" onsubmit="(e) => e.preventDefault(); getOnTheList()">
         <div class="form-group">
           <div class="form-label">
             <label for="email">Email</label>
@@ -57,8 +116,9 @@
           </div>
           <button id="submit-btn" type="submit">Get on the list</button>
         </div>
-      </form>
+      </form> -->
     </div>
+    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>
     <script>
       document.getElementById("form").addEventListener("submit", (e) => {
         e.preventDefault();
