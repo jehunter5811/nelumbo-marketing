@@ -1,2 +1,5 @@
 build/
 node_modules/
+.env
+
+/src/assets/scripts/env.js

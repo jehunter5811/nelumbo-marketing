@@ -2,10 +2,10 @@ const getOnTheList = async () => {
   try {
     const email = document.getElementById('email');
     const body = {
-      date: new Date().toISOString(),
+      api_key: window.env.EMAIL_OCTOPUS_API_KEY,
       email: email.value
     }
-    const res = await fetch("https://hooks.zapier.com/hooks/catch/2565501/olp7jcj/", {
+    const res = await fetch("https://emailoctopus.com/api/1.5/lists/f7da3c7e-331d-11eb-a3d0-06b4694bee2a/contacts", {
       method: "post",
       body: JSON.stringify(body),
     });

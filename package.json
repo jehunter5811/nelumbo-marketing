@@ -12,9 +12,14 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "front-matter": "^4.0.2",
     "fsweb": "^0.8.7",
     "lite-server": "^2.6.1",
     "minify": "^6.0.1",
-    "node-watch": "^0.7.0"
+    "node-watch": "^0.7.0",
+    "showdown": "^1.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }
