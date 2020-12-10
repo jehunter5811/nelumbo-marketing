@@ -37,14 +37,28 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body>
+  <body>    
+    <nav class='nav'>
+      <ul>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://github.com/polluterofminds/nelumbo" target="_blank" rel="noopener noreferrer">Github</a></li>
+      </ul>
+    </nav>
     <p id="message-container" style="display: none"></p>
     <div class="container">
       <img id="main-logo" src="./img/logo_transparent.png" alt="Nelumbo logo" />
       <h1>Nelumbo is a one-click Filecoin blockchain</h1>
       <h2>Develop Filecoin storage clients the easy way</h2>
-      <p>It's coming soon. Get notified of updates.</p>
-
+      <div>
+        <video id='nelumbo-video' autoplay loop>
+          <source src="./img/nelumboFinal.mp4" type="video/mp4">
+        </video>
+      </div>      
+      <h3>Doesn't that seem so much nicer than...</h3>
+      <div>
+        <img id='bash-example' src='./img/bash_code.jpg' alt='screen shot of bash scripting errors' />
+      </div>
+      <h3>Coming soon</h3>
       <div
         class="emailoctopus-form-wrapper emailoctopus-form-centered emailoctopus-form-wrapper-medium"
         style="
@@ -53,7 +67,7 @@
         "
       >
         <p class="emailoctopus-success-message"></p>
-        <p class="emailoctopus-error-message"></p>
+        <p class="emailoctopus-error-message"></p>        
         <form
           action="https://emailoctopus.com/lists/f7da3c7e-331d-11eb-a3d0-06b4694bee2a/members/embedded/1.3/add"
           method="post"
@@ -98,26 +112,8 @@
           </div>
         </form>
       </div>
-
-      <!-- <form id="form" onsubmit="(e) => e.preventDefault(); getOnTheList()">
-        <div class="form-group">
-          <div class="form-label">
-            <label for="email">Email</label>
-          </div>
-          <div class="form-input">
-            <input
-              name="email"
-              id="email"
-              aria-label="email"
-              class="input"
-              type="email"
-              placeholder="fil@filecoin-dev.com"
-            />
-          </div>
-          <button id="submit-btn" type="submit">Get on the list</button>
-        </div>
-      </form> -->
     </div>
+    <footer style='margin-top: 100px'></footer>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>
     <script>
       document.getElementById("form").addEventListener("submit", (e) => {

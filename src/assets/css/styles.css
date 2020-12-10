@@ -24,6 +24,11 @@ body {
   margin: auto;
 }
 
+.small-logo {
+  width: 50px;
+  margin-top: 15px;
+}
+
 .input {
   padding: 5px;
 }
@@ -54,4 +59,97 @@ body {
   text-align: center;
   padding: 20px 0;
   margin-top: 0;
+}
+
+#nelumbo-video {
+  width: 65%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#bash-example {
+  width: 85%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  z-index: 980;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+}
+
+.nav ul {
+  list-style: none;  
+  margin-left: 25px;
+}
+
+.nav ul li {
+  display: inline;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover, a:active, a:visited {
+  color: #026863;
+}
+
+.blog-post {
+  width: 70%;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.blog-post blockquote {
+  border-left: #eee solid 5px;
+  padding-left: 10px;
+}
+
+.blog-post iframe {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.blog-post figure {
+  text-align: center;
+}
+
+.blog-post figure img {
+  max-width: 90%;
+  margin: auto;
+}
+
+.blog-post pre {
+  background: #eee;
+  color: #282828;
+  padding: 10px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.blog-post h4 {
+  font-size: 26px;
+}
+
+.main-post-index {
+  max-width: 75%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.blog-header {
+  max-width: 85%;
+  margin: auto;
+  margin-bottom: 75px;
 }

@@ -50,6 +50,7 @@ const options = {
     const minifiedHtml = await minify(`src/index.html`, options);
 
     fs.writeFileSync(`${buildPath}/index.html`, minifiedHtml);
+
     console.log("Done building!");
   } catch (error) {
     console.log(error);
