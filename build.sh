@@ -7,3 +7,4 @@ cp ./src/sitemap.xml ./build/sitemap.xml
 rm -rf ./build/blog/
 mkdir ./build/blog
 node compilePosts.js
+node generateSitemap.js
