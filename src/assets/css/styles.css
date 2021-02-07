@@ -153,3 +153,11 @@ a:hover, a:active, a:visited {
   margin: auto;
   margin-bottom: 75px;
 }
+
+.get-it-btn {
+  height: 50px;
+  padding: 5px;
+  background: #026863;
+  outline: none;
+  border: none;
+}
